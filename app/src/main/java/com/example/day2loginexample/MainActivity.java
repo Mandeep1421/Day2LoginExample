@@ -1,5 +1,6 @@
 package com.example.day2loginexample;
 
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText eduid;
     private  EditText epass;
     private Button btnlogin;
+
     private TextView txtmsg;
     private Button btncancel;
     String email;
@@ -42,8 +44,20 @@ public class MainActivity extends AppCompatActivity {
                 else
                 {
                     lblerror="Login failed..try again";
+
                 }
                 txtmsg.setText(lblerror.toString());
+            }
+        });
+
+
+        btncancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                eduid.getText().clear();
+                epass.getText().clear();
+
             }
         });
 
