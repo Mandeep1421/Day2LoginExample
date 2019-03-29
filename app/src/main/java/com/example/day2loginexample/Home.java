@@ -43,7 +43,7 @@ private String message;
         btndiv=findViewById(R.id.btndiv);
         txtno1=findViewById(R.id.no1);
         txtno2=findViewById(R.id.no2);
-        msg=findViewById(R.id.errormsg);
+        msg=findViewById(R.id.lblresult);
 
 
 
@@ -53,12 +53,53 @@ private String message;
 
                     no1 = Double.parseDouble ( txtno1.getText().toString());
                     no2 = Double.parseDouble(txtno2.getText().toString());
-
+                msg.setTextColor(Color.RED);
                     ans=no1+no2;
                     msg.setText(ans.toString());
 
             }
         });
+
+        btnsub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                no1 = Double.parseDouble ( txtno1.getText().toString());
+                no2 = Double.parseDouble(txtno2.getText().toString());
+                msg.setTextColor(Color.RED);
+                ans=no1-no2;
+                msg.setText(ans.toString());
+
+            }
+        });
+
+btnmul.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        no1 = Double.parseDouble ( txtno1.getText().toString());
+        no2 = Double.parseDouble(txtno2.getText().toString());
+
+        ans=no1*no2;
+        msg.setTextColor(Color.RED);
+        msg.setText(ans.toString());
+
+    }
+});
+
+
+btndiv.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        no1 = Double.parseDouble ( txtno1.getText().toString());
+        no2 = Double.parseDouble(txtno2.getText().toString());
+        msg.setTextColor(Color.RED);
+        ans=no1/no2;
+        msg.setTextColor(Color.RED);
+        msg.setText(ans.toString());
+
+    }
+});
+
+
 
 
 
