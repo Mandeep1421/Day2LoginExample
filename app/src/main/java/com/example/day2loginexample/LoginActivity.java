@@ -1,5 +1,6 @@
 package com.example.day2loginexample;
 
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     private EditText eduid;
     private  EditText epass;
@@ -40,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
                 if(email.equals("samir") && pass.equals("123") )
                 {
                      lblerror="Login sucess";
+                     //navigate with intenet
+                    Intent mIntent=new Intent(LoginActivity.this,Home.class);
+                    mIntent.putExtra("name","samir");
+                    startActivity(mIntent);
                 }
                 else
                 {

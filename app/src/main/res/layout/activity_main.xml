@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="20dp"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
     <TextView
         android:id="@+id/logintitle"
@@ -26,6 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:autofillHints=""
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Enter Email"
         android:inputType="textEmailAddress" />
@@ -36,6 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:autofillHints=""
+        android:drawableStart="@drawable/ic_pass"
+        android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Enter Password"
         android:inputType="textPassword" />

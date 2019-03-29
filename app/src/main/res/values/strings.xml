@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">Day2LoginExample</string>
+    <string name="app_name">DAY_2 APP</string>
     <string name="button">Button</string>
     <string name="login">Login</string>
     <string name="btnerror">.</string>
     <string name="btncancel">Cancel</string>
+    <string name="textview">TextView</string>
+    <string name="calculator">CALCULATOR</string>
 </resources>
